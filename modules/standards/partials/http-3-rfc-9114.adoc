@@ -1,0 +1,7 @@
+// RFC 9114 - HTTP/3
+
+ifndef::emojis_included[]
+include::partial$emojis.adoc[]
+endif::[]
+
+* https://datatracker.ietf.org/doc/html/rfc9114[HTTP/3 - RFC 9114 ({draft})^]
