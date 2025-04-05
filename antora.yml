@@ -1,0 +1,10 @@
+name: apibestpractices
+title: API Best Practices
+start_page: overview.adoc
+version: ~
+asciidoc:
+  attributes:
+    page-toclevels: 3
+    
+nav:
+  - modules/ROOT/nav.adoc
