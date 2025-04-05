@@ -1,0 +1,20 @@
+name: Build Antora Project
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    name: "Build Antora project"
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      - name: Install Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+      - name: Install Antora
+        run: npm clean-install
+      - name: Generate Site
+        run: npx antora antora-playbook.yml
