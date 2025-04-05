@@ -1,0 +1,4 @@
+:emojis_included: true
+
+:draft: ✍️
+:obsolete: ⚰️

@@ -1,0 +1,4 @@
+|===
+| {draft} | Document or standard is a draft
+| {obsolete} | Document or standard is obsolete and only referenced for completeness
+|===
