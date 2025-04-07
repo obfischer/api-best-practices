@@ -16,6 +16,8 @@ include::partial$legend.adoc[]
 
 include::partial$http-2-rfc-9113.adoc[]
 include::partial$http-3-rfc-9114.adoc[]
+include::partial$http-semantics-rfc-9110.adoc[]
 include::partial$http-1.0-rfc-1945.adoc[]
 include::partial$http-1.1-rfc-2068.adoc[]
 include::partial$http-1.1-rfc-2616.adoc[]
+include::partial$http-semantics-rfc-7231.adoc[]
