@@ -1,0 +1,8 @@
+= The HEAD Method
+:page-aliases: http-head-method.adoc
+
+== Synopsis
+
+== Usage
+
+== References

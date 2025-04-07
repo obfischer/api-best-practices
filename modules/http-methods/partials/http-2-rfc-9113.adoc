@@ -1,0 +1,7 @@
+// RFC 9113 - HTTP/2
+
+ifndef::emojis_included[]
+include::partial$emojis.adoc[]
+endif::[]
+
+* https://datatracker.ietf.org/doc/html/rfc9113[HTTP/2 - RFC 9113^]

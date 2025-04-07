@@ -1,0 +1,8 @@
+= The TRACE Method
+:page-aliases: http-trace-method.adoc
+
+== Synopsis
+
+== Usage
+
+== References

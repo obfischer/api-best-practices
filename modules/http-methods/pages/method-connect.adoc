@@ -1,0 +1,8 @@
+= The CONNECT Method
+:page-aliases: http-connect-method.adoc
+
+== Synopsis
+
+== Usage
+
+== References

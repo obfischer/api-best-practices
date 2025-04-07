@@ -1,0 +1,8 @@
+= The GET Method
+:page-aliases: http-get-method.adoc
+
+== Synopsis
+
+== Usage
+
+== References

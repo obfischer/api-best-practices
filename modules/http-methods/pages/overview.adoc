@@ -1,0 +1,8 @@
+= HTTP Methods
+
+todo Write introduction
+
+
+Der Begriff „Verb“ stammt aus der REST-Terminologie (z. B. Richardson Maturity Model), wo man Methoden wie GET/POST als Aktionen beschreibt.
+
+In REST-Kontexten spricht man von „HTTP verbs“ im Gegensatz zu „HTTP

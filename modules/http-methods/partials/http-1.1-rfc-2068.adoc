@@ -1,0 +1,7 @@
+// RFC 2068 - Hypertext Transfer Protocol -- HTTP/1.1
+
+ifndef::emojis_included[]
+include::partial$emojis.adoc[]
+endif::[]
+
+* https://datatracker.ietf.org/doc/html/rfc2068[Hypertext Transfer Protocol -- HTTP/1.1 - RFC 2068 ({obsolete})^]

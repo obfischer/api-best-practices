@@ -1,0 +1,8 @@
+= The PUT Method
+:page-aliases: http-put-method.adoc
+
+== Synopsis
+
+== Usage
+
+== References

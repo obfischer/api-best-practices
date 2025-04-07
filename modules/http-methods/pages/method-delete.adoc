@@ -1,0 +1,8 @@
+= The DELETE Method
+:page-aliases: http-delete-method.adoc
+
+== Synopsis
+
+== Usage
+
+== References

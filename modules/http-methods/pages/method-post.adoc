@@ -1,0 +1,8 @@
+= The POST Method
+:page-aliases: http-post-method.adoc
+
+== Synopsis
+
+== Usage
+
+== References
