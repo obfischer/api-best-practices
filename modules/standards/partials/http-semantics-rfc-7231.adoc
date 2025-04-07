@@ -4,4 +4,4 @@ ifndef::emojis_included[]
 include::partial$emojis.adoc[]
 endif::[]
 
-* https://datatracker.ietf.org/doc/html/rfc7231[Hypertext Transfer Protocol (HTTP/1.1): Semantics and Content ({obsolete})]
+* https://datatracker.ietf.org/doc/html/rfc7231[Hypertext Transfer Protocol (HTTP/1.1): Semantics and Content - RFC 7231 ({obsolete})]
