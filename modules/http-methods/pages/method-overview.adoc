@@ -1,0 +1,41 @@
+= Overview of HTTP Methods
+
+ifndef::emojis_included[]
+include::partial$emojis.adoc[]
+endif::[]
+
+HTTP methods are one of two key concepts of the HTTP protocol.
+An HTTP method describes the operation a client wants the target server to fulfill.
+If a client wants to delete a resource on the target server, the `DELETE` method can be used to tell the server to run a delete operation for the requested resource.
+On the other hand, the `PUT` method can be used to instruct the server to create or replace a resource.
+
+// todo Link to the status code page
+The second key concept is HTTP status codes, which the server uses to inform the client about the success or failure of the execution.
+
+Below you can find a overview of the various existing HTTP methods
+
+.Overview of HTTP methods
+|===
+|Method | Idempotent | Safe | Cachable
+
+| xref:method-get.adoc[GET]
+| {yes}
+| {yes}
+| {yes}
+
+| xref:method-head.adoc[HEAD]
+| {yes}
+| {yes}
+| {yes}
+
+| xref:method-options.adoc[OPTIONS]
+| {yes}
+| {yes}
+| {no}
+
+| xref:method-trace.adoc[TRACE]
+| {yes}
+| {yes}
+| {no}
+
+|===

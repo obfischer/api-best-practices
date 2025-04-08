@@ -2,3 +2,5 @@
 
 :draft: ✍️
 :obsolete: ⚰️
+:yes: ✅
+:no: ❌

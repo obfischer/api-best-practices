@@ -1,5 +1,6 @@
 * xref:overview.adoc[HTTP Methods]
 ** xref:overview.adoc[Introduction]
+** xref:method-overview.adoc[Method Overview]
 ** xref:http-methods:method-connect.adoc[CONNECT]
 ** xref:http-methods:method-delete.adoc[DELETE]
 ** xref:http-methods:method-get.adoc[GET]

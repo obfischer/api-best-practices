@@ -15,6 +15,7 @@ include::partial$legend.adoc[]
 [#sgbt_http_protocol]
 == HTTP Protocol
 
+include::partial$http-1.1-rfc-9112.adoc[]
 include::partial$http-2-rfc-9113.adoc[]
 include::partial$http-3-rfc-9114.adoc[]
 include::partial$http-semantics-rfc-9110.adoc[]

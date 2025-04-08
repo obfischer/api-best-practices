@@ -1,0 +1,7 @@
+// HTTP/1.1 - RFC 9112
+
+ifndef::emojis_included[]
+include::partial$emojis.adoc[]
+endif::[]
+
+* https://datatracker.ietf.org/doc/html/rfc9112[HTTP/1.1 - RFC 9112^]
