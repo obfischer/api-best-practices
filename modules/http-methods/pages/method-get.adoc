@@ -5,7 +5,7 @@
 
 `GET` requests the transfer of a target resource in a selected representation from the server to the client.
 
-== Usage
+== Examples
 
 .HTTP 1.1 Request to retrieve a given resource
 ----
@@ -29,3 +29,4 @@ accept: */*
 
 include::standards:partial$http-1.1-rfc-9112.adoc[]
 include::partial$http-3-rfc-9114.adoc[]
+include::standards:partial$http-semantics-rfc-9110.adoc[]

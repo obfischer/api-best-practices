@@ -3,6 +3,31 @@
 
 == Synopsis
 
-== Usage
+`GET` requests
+the server to remove a resource.
+
+== Examples
+
+.HTTP 1.1 Request to remove a given resource
+----
+DELETE /customers/9839 HTTP/1.1
+Host: amce.co.uk
+User-Agent: curl/8.0.0
+Accept: */*
+----
+
+.HTTP/3 Request to remove a given resource
+----
+:method: DELETE
+:scheme: https
+:authority: amce.co.uk
+:path: /customers/9839
+user-agent: curl/8.0.0
+accept: */*
+----
 
 == References
+
+include::standards:partial$http-1.1-rfc-9112.adoc[]
+include::standards:partial$http-3-rfc-9114.adoc[]
+include::standards:partial$http-semantics-rfc-9110.adoc[]
