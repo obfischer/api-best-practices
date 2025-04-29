@@ -1,0 +1,20 @@
+// section_id_prefix: ssby_
+= Standards sorted by year of Publication
+
+ifndef::emojis_included[]
+include::partial$emojis.adoc[]
+endif::[]
+
+This page lists relevant standards for HTTP-based APIs, ordered by year of publication.
+
+== Legend
+
+include::partial$legend.adoc[]
+
+[#ssby_standards]
+== Standards
+
+This page lists all standards referenced by their title.
+
+include::partial$generated-http-related-standards-sorted-by-year.adoc[]
+

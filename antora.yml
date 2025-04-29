@@ -9,3 +9,20 @@ asciidoc:
 nav:
   - modules/ROOT/nav.adoc
   - modules/standards/nav.adoc
+
+ext:
+  collector:
+    run:
+      - command: mkdir -p build
+        dir: modules/standards
+      - command: ./bin/generate-standards-page-by-year.sh data/http-related-standards.yaml build/generated-http-related-standards-sorted-by-year.adoc
+        dir: modules/standards
+      - command: ./bin/generate-standards-page-by-title.sh data/http-related-standards.yaml build/generated-http-related-standards-sorted-by-title.adoc
+        dir: modules/standards
+      - command: ./bin/generate-standards-page-by-topic.sh data/http-related-standards.yaml build/generated-http-related-standards-sorted-by-topic.adoc
+        dir: modules/standards
+
+    scan:
+      dir: modules/standards/build
+      files: '*.adoc'
+      into: modules/standards/partials
