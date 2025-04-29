@@ -29,6 +29,13 @@ standards:
     url: https://datatracker.ietf.org/doc/html/rfc2616
     topics:
       - HTTP Protocol
+  - title: The Deprecation HTTP Response Header Field - RFC 8594
+    year: "2019"
+    status: active
+    url: https://datatracker.ietf.org/doc/html/rfc9745
+    topics:
+      - HTTP Header
+      - Life Cycle Management
   - title: The Sunset HTTP Header Field - RFC 8594
     year: "2019"
     status: active
