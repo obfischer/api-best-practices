@@ -1,0 +1,31 @@
+standards:
+  - title: HTTP/2 - RFC 9113
+    year: "2022"
+    status: active
+    url: https://datatracker.ietf.org/doc/html/rfc9113
+    topics:
+      - HTTP Protocol
+  - title: HTTP/3 - RFC 9114
+    year: "2022"
+    status: active
+    url: https://datatracker.ietf.org/doc/html/rfc9114
+    topics:
+      - HTTP Protocol
+  - title: Hypertext Transfer Protocol -- HTTP/1.0 - RFC 1945
+    year: "1996"
+    status: obsolete
+    url: https://datatracker.ietf.org/doc/html/rfc1945
+    topics:
+      - HTTP Protocol
+  - title: Hypertext Transfer Protocol -- HTTP/1.1 - RFC 2068
+    url: https://datatracker.ietf.org/doc/html/rfc2068
+    year: "1997"
+    status: obsolete
+    topics:
+      - HTTP Protocol
+  - title: Hypertext Transfer Protocol -- HTTP/1.1 - RFC 2616
+    year: "1999"
+    status: obsolete
+    url: https://datatracker.ietf.org/doc/html/rfc2616
+    topics:
+      - HTTP Protocol

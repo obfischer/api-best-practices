@@ -13,6 +13,10 @@ ui:
     url: https://gitlab.com/antora/antora-ui-default/-/jobs/artifacts/HEAD/raw/build/ui-bundle.zip?job=bundle-stable
     snapshot: true
 
+antora:
+  extensions:
+    - '@antora/collector-extension'
+
 asciidoc:
   extensions:
-    - asciidoctor-kroki
+    - 'asciidoctor-kroki'

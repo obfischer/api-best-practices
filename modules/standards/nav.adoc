@@ -1,4 +1,5 @@
 * Standards
-** xref:overview.adoc[Introduction]
-** xref:grouped.adoc[Grouped by topic]
-** xref:sorted.adoc[Sorted by title]
+** xref:overview.adoc[Overview]
+** xref:standards-by-topic.adoc[By topic]
+** xref:standards-by-title-of-publication.adoc[By title]
+** xref:standards-by-year-of-publication.adoc[By year]

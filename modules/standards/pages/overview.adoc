@@ -1,8 +1,9 @@
 = Relevant Standards for APIs
 
-This sections lists all relevant official and unofficial standards relevant for HTTP based APIs.
+This section lists all relevant official and unofficial standards relevant for HTTP-based APIs.
 
-This section is serves as a collection of references for all those who want to delve deeper into the subject areas for their work.
+This section serves as a collection of references for all those who wish to delve deeper into the subject areas for their work.
 
-* xref:grouped.adoc[List of standards grouped by topic]
-* xref:sorted.adoc[List of standards ordered by their title]
+* xref:standards-by-topic.adoc[]
+* xref:standards-by-title-of-publication.adoc[]
+* xref:standards-by-year-of-publication.adoc[]

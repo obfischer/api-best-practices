@@ -1,0 +1,20 @@
+// section_id_prefix: ssbto_
+= Standards grouped by Topic
+
+ifndef::emojis_included[]
+include::partial$emojis.adoc[]
+endif::[]
+
+This page lists relevant standards for HTTP-based APIs grouped by topic.
+
+== Legend
+
+include::partial$legend.adoc[]
+
+[#ssbto_standards]
+== Standards
+
+This page lists all standards referenced by their title.
+
+include::partial$generated-http-related-standards-sorted-by-topic.adoc[]
+

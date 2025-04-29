@@ -1,0 +1,17 @@
+// section_id_prefix: ssbt_
+= Standards sorted by Title
+
+ifndef::emojis_included[]
+include::partial$emojis.adoc[]
+endif::[]
+
+This page lists relevant standards for HTTP-based APIs ordered by their title.
+
+== Legend
+
+include::partial$legend.adoc[]
+
+[#ssbt_standards]
+== Standards
+
+include::partial$generated-http-related-standards-sorted-by-title.adoc[]
