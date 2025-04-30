@@ -1,0 +1,277 @@
+// section_id_prefix: capi_
+= Classification of APIs by their Visibility
+
+:url_scs: https://scs-architecture.org/
+:url_oas: https://www.openapis.org/
+
+In this article, we will introduce the classification of APIs by visibility, describe the three groups, differentiate between them and describe the resulting implications.
+
+[#capi_public_api]
+== Public API
+
+A public API can be found and used freely on the Internet.
+Using the API freely also includes if the API consumer has to register beforehand in order to use the API.
+The API provider does not know the consumers of its API and does not provide specific customisations for individual consumers.
+Incompatible changes can lead to the exclusion of API users.
+This can result in material and financial damage to both the API provider and the API consumer.
+It can also damage the reputation of the API provider.
+Public APIs require excellent documentation to make it easier for the consumer of the API to connect to them.
+They should also be monitored, using metrics and monitoring of availability and response times, to detect errors as early as possible.
+
+[#capi_internal_api]
+== Internal API
+
+An internal API is used only within an organisation or group of collaborating organisations.
+It serves a common purpose for all participants.
+The API provider knows its consumers and can develop and adapt the API in consultation with all participating organisations.
+Changes to an API can therefore be more easily communicated between all participants.
+The availability requirements here are identical to those for a public API, as the organisations need it to fulfil their purpose of existence.
+As with a public API, incompatible changes and degradation of service quality will result in material, financial and reputational damage.
+Monitoring is therefore required in the same way as for public APIs.
+
+[#capi_private_api]
+== Private API
+
+A private API is only used within one system.
+The organisational roles of API provider, API implementer and API consumer coincide here.
+The level of documentation, availability and development of the API depends solely on the requirements of the system.
+
+[#capi_distinguishing_features]
+== Summary of the distinguishing features
+
+[cols="3,2,2,2"]
+|===
+.2+| Criteria
+3+| Type
+
+| Public API
+| Internal API
+| Private API
+
+| Does the API provider know the API consumer?
+| no
+| yes
+| yes
+
+| Can new features be easily added?
+| yes
+| yes
+| yes
+
+| Can features be easily deprecated?
+| no
+| no
+| yes
+
+| Desired effort for the documentation of the API?
+| high
+| medium
+| as far as necessary
+
+| Should there be SLAs for the API?
+| yes
+| yes
+| no
+
+| Is monitoring necessary?
+| yes
+| yes
+| optional
+
+| Can technical problems lead to reputational damage?
+| yes
+| yes
+| no
+
+| Can technical problems cause financial damage?
+| yes
+| yes
+| yes
+
+|===
+
+[#capi_recommendations]
+== Recommendations for Architects
+
+When trying to design, implement and operate an API, you should always think from the end.
+The end in terms of the outcomes required to operate an API, depending on its type, to fulfil the business case for which it is required.
+
+The table below lists all the measures you should consider if you are planning to provide and operate an API.
+
+|===
+| Measure   | Public API | Internal API | Private API
+
+| Communication strategy
+| required
+| required
+| not required
+
+| API Specification
+| required
+| required
+| not required
+
+| API First
+| required
+| required
+| not required
+
+| Documentation
+| required
+| required
+| not required
+
+| Versioning strategy
+| required
+| required
+| not required
+
+| Life Cycle Management
+| required
+| required
+| not required
+
+| Monitoring
+| required
+| required
+| not required
+
+| Service Level Agreement
+| required
+| required
+| not required
+
+|===
+
+=== Communication Strategy
+
+A provider of a public or internal API needs a communication channel to be able to communicate with its consumers.
+Consumers must be able to be informed about changes to the API or any necessary maintenance work or a deterioration in availability.
+Consumers, on the other hand, need a communication channel for support enquiries or to be able to submit errors and enhancement requests.
+
+==== Recommendation
+
+* Set up a communication channel with the users of the API.
+  Depending on your organisation's capabilities, this could be a blog, a Slack workspace or a Discord server.
+* Make sure your communication channel is easy to find.
+
+=== API Specification
+
+An API specification is mandatory for public and internal APIs.
+It must be available in a machine-readable format as a formal specification according to a public standard such as the {url_oas}[OpenAPI specification^].
+API consumers are thus enabled to implement a connection to the API and not to guess it.
+For its part, the API provider can better communicate changes to the API by means of a new version of the API specification.
+
+==== Recommendation
+
+* Choose an established standard for the API specification.
+* Publish the API specification in such a way that API consumers can easily find it.
+* Make the API specification available as an artifact for common build systems and package managers such as Apache Maven or npm so that API consumers can easily integrate it into their software development cycle.
+
+=== API First
+
+The API First approach must be followed for public and internal APIs.
+This is the only way to ensure that the implementation and the API specification are as close as possible.
+Where such differences occur, the API specification and documentation must be improved.
+Otherwise, differences in how the API is used by the provider and the consumer will result from different interpretations of the API specification.
+
+==== Recommendation
+
+* Adhere to API First, even if it is difficult at first.
+* Use API First already in the design phase of the API to get quick feedback on the implementability of the API.
+
+
+=== Documentation
+
+The documentation of an API goes beyond the formal specification.
+The API specification describes the formal aspects such as resources, operations and return values.
+Of course, the API specification may contain additional information.
+However, it is always limited to the structure of this specification and its capabilities.
+The API documentation, however, goes beyond this and contains information that allows API consumers to better understand the API and the information it provides.
+
+==== Recommendation
+
+* Choose a documentation system for your API documentation.
+* Create, validate and publish your documentation with your API,
+* Version the documentation for the API so that API consumers can always find the correct documentation for the corresponding version of the API.
+
+=== Versioning Strategy
+
+The definition of a versioning strategy determines the scheme according to which an API is versioned and how a distinction is made between compatible and non-compatible versions of the API using version numbers.
+
+==== Recommendation
+
+* Choose a versioning strategy that is already established.
+* Resist the temptation to develop your own versioning strategy that nobody outside your organisation knows and understands.
+* Make sure that your versioning strategy is also compatible with tools such as Apache Maven, npm, or other package management systems so that you can publish the artifacts of your API, for example, the API specification.
+
+
+=== Life Cycle Management
+
+The life cycle management of an API describes all measures from development to operation and communication of changes to the decommissioning of the API.
+It therefore includes all measures and guidelines that must be taken into account so that no damage occurs for either the API provider or the API consumer.
+// Later: Is this is in sync with a later definition of Life Cycle Management? Oliver B. Fischer, 2025-05-05
+
+==== Recommendation
+
+* Document the life cycle management applicable to the API.
+* Include the life cycle management documentation in the API documentation.
+
+
+=== Monitoring
+
+Monitoring an API provides important metrics such as availability, throughput, call count and distribution over time, as well as error rate and response time
+Monitoring, therefore, provides the basis for monitoring the service level agreement and also provides information on the effectiveness of the architecture and implementation.
+In turn, monitoring also forms the basis for decisions for product management and lifecycle management.
+
+==== Recommendation
+
+* Define relevant metrics for your API.
+  Stick to a set of metrics that you understand.
+* Ensure that your metrics allow you to monitor whether you are meeting your service level agreement.
+* Check them regularly.
+
+
+=== Service Level Agreement
+
+// Later: Is this is in sync with a later definition of Life Cycle Management? Oliver B. Fischer, 2025-05-05
+A service level agreement describes the promised characteristics of an API by the API provider to each API consumer.
+Which properties are agreed in the service level agreement is individual.
+In most cases, assurances are made regarding availability and throughput.
+
+A service level agreement offers advantages to API providers and API consumers.
+The API provider has a basis for developing a software architecture that is able to fulfil the assurances made in the service level agreement.
+The service level agreement also provides a basis for monitoring.
+The API consumer, for his part, has a basis for planning his utilisation of the API.
+
+
+==== Recommendation
+
+* Only define properties of your API in your service level agreement that you can fulfil.
+* Define the properties of your API in your service level agreement in such a way that they are of interest to API consumers.
+* Choose the metrics so that they meet the requirements of SMART, but perhaps without the T at the end.
+
+== Examples
+
+[#capi_public_api_exampla]
+=== Public API
+
+A data broker makes its data available to paying customers on a subscription basis.
+Anyone can simply open an account with the data broker and subscribe to the data they want. Customers integrate the API into their IT infrastructure and business processes.
+If there are incompatible changes or a deterioration in the quality of service, the customers' business processes will be negatively affected and the customers can take recourse against the data broker.
+*Each of the APIs available to customers is a public API.*
+
+[#capi_internal_api_exampla]
+=== Internal API
+
+A network of companies in the energy industry exchange daily forecast and actual consumption data for capacity planning, in order to be able to plan the required energy quantities for the next few days.
+Explicit registration and activation is required to use the APIs used for this purpose.
+Changes to an API will be agreed in advance between all parties involved. If there are problems with the use of the API, all parties involved will suffer.
+*Each API used between energy companies is an internal API.*
+
+[#capi_private_api_exampla]
+=== Private API
+
+A team at an online store provider runs a {url_scs}[Self-contained System (SCS)^] with distributed processes and services.
+To communicate with each other, these processes and services use APIs for which there are no API consumers outside this closed system.
+*Each of these APIs is a private API.*
