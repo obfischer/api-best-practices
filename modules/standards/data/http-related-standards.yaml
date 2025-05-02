@@ -1,4 +1,10 @@
 standards:
+  - title: Additional HTTP Status Codes - RFC 6585
+    year: "2012"
+    status: active
+    url: https://datatracker.ietf.org/doc/html/rfc6585
+    topics:
+      - HTTP Protocol
   - title: HTTP/2 - RFC 9113
     year: "2022"
     status: active
