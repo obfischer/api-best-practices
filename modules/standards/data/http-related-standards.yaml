@@ -145,7 +145,7 @@ standards:
     topics:
       - Identifiers
   - title: The Deprecation HTTP Response Header Field - RFC 8594
-    year: "2019"
+    year: "2025"
     status: active
     url: https://datatracker.ietf.org/doc/html/rfc9745
     type: Proposed Standard
