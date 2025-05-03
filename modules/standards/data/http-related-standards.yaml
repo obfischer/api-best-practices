@@ -161,6 +161,20 @@ standards:
       - HTTP Protocol
       - April Joke
       - Coffee
+  - title: The JSON data interchange syntax - ECMA-404
+    year: "2017"
+    status: active
+    type: Published Standard
+    url: https://ecma-international.org/publications-and-standards/standards/ecma-404/
+    topics:
+      - Data Interchange Format
+  - title: The JavaScript Object Notation (JSON) Data Interchange Format - RFC 8259
+    year: "2017"
+    status: active
+    type: Internet Standard
+    url: https://datatracker.ietf.org/doc/html/rfc8259
+    topics:
+      - Data Interchange Format
   - title: The Sunset HTTP Header Field - RFC 8594
     year: "2019"
     status: active
