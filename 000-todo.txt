@@ -1,0 +1,1 @@
+- Findout how to integrate this with Antora and Asciidoctor properly
