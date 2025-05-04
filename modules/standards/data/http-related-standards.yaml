@@ -261,3 +261,10 @@ standards:
     url: https://datatracker.ietf.org/doc/html/rfc8288
     topics:
       - Linking
+  - title: YAML Ain’t Markup Language (YAML™) version 1.2.2
+    year: "2021"
+    status: active
+    type: Published Standard
+    url: https://yaml.org/spec/1.2.2/
+    topics:
+      - Data Interchange Format
