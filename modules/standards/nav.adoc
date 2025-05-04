@@ -1,5 +1,5 @@
 * Standards
-** xref:overview.adoc[Overview]
+** xref:index.adoc[Overview]
 ** xref:standards-by-topic.adoc[By topic]
 ** xref:standards-by-title-of-publication.adoc[By title]
 ** xref:standards-by-year-of-publication.adoc[By year]

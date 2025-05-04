@@ -1,6 +1,6 @@
 site:
   title: Body of Knowledge for APIs
-  start_page: apibestpractices::overview.adoc
+  start_page: apibestpractices::index.adoc
 
 content:
   sources:
