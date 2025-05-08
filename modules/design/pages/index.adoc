@@ -1,0 +1,14 @@
+= API Design
+
+For me, *API Design* is the process by which different things and aspects are brought together in such a way that they are perceived by the user as something special and beautiful and are characterised by ease of use.
+
+Just as this applies to architecture or interior design, it also applies to the development of an API.
+A good API is not just a purely formal specification.
+It is characterised by the fact that it is straightforward to use, understandable, and fulfils its business purpose.
+It should also be maintainable for us, who provide this API, with little effort through support requests, error, and operational efforts.
+It is precisely APIs like this that are needed when it comes to establishing API-based business models.
+It doesn't matter whether they are used purely internally or made available to customers and partners.
+
+The better an API covers all these aspects, the higher its acceptance and the lower the costs for us who provide and maintain an API.
+
+In this section, I have therefore summarised some important thoughts and aspects that should be taken into account from the very beginning when designing an API.

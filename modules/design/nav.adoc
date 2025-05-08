@@ -1,2 +1,2 @@
-* Design
+* xref:index.adoc[Design]
 ** xref:classification-of-apis.adoc[]
