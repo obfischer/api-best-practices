@@ -130,6 +130,20 @@ standards:
     type: Draft Standard
     topics:
       - HTTP Protocol
+  - title: Problem Details for HTTP APIs - RFC 7807
+    year: "2016"
+    status: obsolete
+    type: Proposed standard
+    url: https://datatracker.ietf.org/doc/html/rfc7807
+    topics:
+      - Error handling
+  - title: Problem Details for HTTP APIs - RFC 9457
+    year: "2023"
+    status: active
+    type: Proposed standard
+    url: https://datatracker.ietf.org/doc/html/rfc9457
+    topics:
+      - Error handling
   - title: 'Returning Values from Forms: multipart/form-data - RFC 7578'
     year: "2015"
     status: active
