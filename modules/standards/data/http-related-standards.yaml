@@ -130,6 +130,27 @@ standards:
     type: Draft Standard
     topics:
       - HTTP Protocol
+  - title: JSON Lines
+    status: active
+    year: "2020"
+    type: Practised standard
+    url: https://jsonlines.org/
+    topics:
+      - Data Interchange Format
+  - title: JSON Schema 2020-12
+    status: active
+    year: "2020"
+    type: Published Standard
+    url: https://json-schema.org/specification
+    topics:
+      - Schema language
+  - title: JavaScript Object Notation (JSON) Text Sequences
+    year: "2015"
+    status: active
+    type: Proposed Standard
+    url: https://datatracker.ietf.org/doc/html/rfc7464
+    topics:
+      - Data Interchange Format
   - title: Problem Details for HTTP APIs - RFC 7807
     year: "2016"
     status: obsolete
@@ -275,6 +296,13 @@ standards:
     url: https://datatracker.ietf.org/doc/html/rfc8288
     topics:
       - Linking
+  - title: XML Schema 1.1
+    status: active
+    year: "2012"
+    type: W3C Recommendation
+    url: https://www.w3.org/XML/Schema
+    topics:
+      - Schema language
   - title: YAML Ain’t Markup Language (YAML™) version 1.2.2
     year: "2021"
     status: active
