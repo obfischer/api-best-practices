@@ -1,2 +1,3 @@
 * xref:index.adoc[Design]
+** xref:api-first-versus-code-first.adoc[]
 ** xref:classification-of-apis.adoc[]
