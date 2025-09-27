@@ -288,6 +288,7 @@ standards:
     url: https://datatracker.ietf.org/doc/html/rfc5988
     type: Proposed Standard
     topics:
+      - HTTP Header
       - Linking
   - title: Web Linking - RFC 8288
     year: "2017"
@@ -295,6 +296,7 @@ standards:
     type: Proposed Standard
     url: https://datatracker.ietf.org/doc/html/rfc8288
     topics:
+      - HTTP Header
       - Linking
   - title: XML Schema 1.1
     status: active
