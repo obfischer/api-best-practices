@@ -151,6 +151,13 @@ standards:
     url: https://datatracker.ietf.org/doc/html/rfc7464
     topics:
       - Data Interchange Format
+  - title: 'Linkset: Media Types and a Link Relation Type for Link Sets - RFC 9264'
+    year: "2022"
+    status: active
+    type: Published Standard
+    url: https://datatracker.ietf.org/doc/html/rfc9264
+    topics:
+      - Linking
   - title: Problem Details for HTTP APIs - RFC 7807
     year: "2016"
     status: obsolete
