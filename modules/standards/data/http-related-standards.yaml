@@ -267,6 +267,7 @@ standards:
     url: https://datatracker.ietf.org/doc/html/rfc5988
     type: Proposed Standard
     topics:
+      - HTTP Header
       - Linking
   - title: Web Linking - RFC 8288
     year: "2017"
@@ -274,6 +275,7 @@ standards:
     type: Proposed Standard
     url: https://datatracker.ietf.org/doc/html/rfc8288
     topics:
+      - HTTP Header
       - Linking
   - title: YAML Ain’t Markup Language (YAML™) version 1.2.2
     year: "2021"
