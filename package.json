@@ -4,7 +4,7 @@
   },
   "dependencies": {
     "@antora/collector-extension": "^1.0.2",
-    "@antora/site-generator": "^3.1.12",
+    "@antora/site-generator": "^3.1.14",
     "asciidoctor": "^3.0.4",
     "asciidoctor-kroki": "^0.18.1",
     "package.json": "^2.0.1"
