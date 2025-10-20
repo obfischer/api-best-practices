@@ -1,0 +1,31 @@
+API // Spezifikation versus Implementierung
+
+In diesem Artikel stelle ich die beiden Ansätze API First und Code First im Bereich des API-Design vor, vergleiche die beiden hinsichtlich ihrer Vor- und Nachteile und geben anschließend eine begründete Empfehlung, wann API-First und wann Code First zur Anwendung kommen sollten.
+Daher w
+Abi First drückt Das Ziel aus, dass der Entwickler der Abi hatte. Während Code first nur die Implementierung dokumentiert. Das sind zwei vollständig unterschiedliche Ansätze. Eine der wesentlichen Nachteile von Code first ist,
+
+Abi Fürst entgegen, erlaubt es sich auf die Schnittstelle und ihren Fach, das verfolgte fachliche Ziel zu konzentrieren. Befindet sich somit für das AP Design auf der richtigen Abstraktionenebene.
+Bei Code First hab ich teilweise Klassen gesehen, die mit so vielen an Mutationen bespielt waren,
+
+API First
+
+
+Code First
+
+
+
+
+Empfehlung
+
+Wie immer lautet die Antwort auf die Frage, welchen der beiden Ansätze man wählen sollte: Das kommt drauf an.
+
+API First
+- Für öffentliche und interne APIs als Contract für API-Anbieter und API-Consumer
+
+Code First
+
+
+Wann einsetzen?
+
+- Bei Bestandssystemen mit bestehenden APIs
+- Bei systemprivaten APIs
