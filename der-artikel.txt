@@ -1,3 +1,23 @@
+Aufbau eines guten Artikels in vier Abschnitten
+
+Warum
+- Zweck
+- Motiv
+- Bewußtsein schaffen
+
+Definitionen
+- Begriffe
+- Hintergründe
+
+Beispiele
+
+
+Zukunftsaussichten
+- Weiter Optionen
+
+
+
+
 API // Spezifikation versus Implementierung
 
 In diesem Artikel stelle ich die beiden Ansätze API First und Code First im Bereich des API-Design vor, vergleiche die beiden hinsichtlich ihrer Vor- und Nachteile und geben anschließend eine begründete Empfehlung, wann API-First und wann Code First zur Anwendung kommen sollten.
