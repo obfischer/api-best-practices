@@ -1,6 +1,10 @@
 // section_id_prefix: apif
 = API First
 
+Bei dem Konzept von API First steht im Zentrum die Spezifikation der API.
+Im Folgenden werde ich den Grundgedanken erklären, welche Vorteile und Nachteile ein API-First Ansatz bietet, sowie auf übliche Missverständnisse dieses Ansatzes eingehen.
+
+// API First ist ein Konzept zur Entkopplung der Beschreibung einer API von deren technischer Implementierung.
 
 
 == Was bedeutet API First?
@@ -28,14 +32,21 @@ include::partial$def-api-first.adoc[]
 
 Eine formale Spezifikation einer API mittels einer für den Typ der API vorgesehenen Beschreibungssprache, beispielsweise mittels der OpenAPI Specification für REST-APIs oder der ganz alten Web Services Description Language (WDSL) für SOAP Services, resultiert immer in einer maschinenlesbaren Beschreibung der API.
 
-Deren Existenz erlaubt es, die Frage zu stellen und mittels Toolings zu beantworten: "Ist die Spezifikation syntaktisch korrekt?"
+Deren Existenz erlaubt es, die Frage zu stellen und mittels Toolings zu beantworten: "*Ist die Spezifikation syntaktisch korrekt?*"
 
-Auch die darüber hinausgehende Frage "Entspricht die API unseren eigenen Standards" kann so beantwortet und die Einhaltung sichergestellt werden.
+Auch die darüber hinausgehende Frage "*Entspricht die API unseren eigenen Standards?*" kann so beantwortet und die Einhaltung sichergestellt werden.
 
 
 
 // - Unterstützung durch Parsen und eigene Tools
-// - Implizite Dokumentation
+
+
+== Die Spezifikation ist die Dokumentation
+
+Bei API-First steht die Spezifikation im Vordergrund als zentrales Artefakt, welches die Grundlage für jede Implementierung, egal ob als API-Provider oder API-Client, dient.
+Da die Spezifikation alle Aspekte in Bezug auf Operationen, und damit das Verhalten der API, und die für die Operationen mit der Operation verbundenen Daten beschreibt, ist eine nachträgliche Dokumentation der API nicht notwendig.
+*Eine API-Spezifikation dient auch immer gleichzeitig als deren Dokumentation.*
+
 // - Nachhaltig
 // - Aufwand für Reverse Engineering sinkt
 // - Effizienz steigt, da Teams parallel die API implenentieren können
