@@ -9,7 +9,7 @@
 include::partial$def-api-first.adoc[]
 :hide-title!:
 
-== Wesentliche Eigenschaften
+== Grundgedanken
 
 * Vertrag, der verbindlich ist
 * Zentrale Spezifikation, die geteilt werden kann
@@ -19,8 +19,10 @@ include::partial$def-api-first.adoc[]
 
 == Vorteile
 
+
 - Entkopplung, interna werden von der Schnittstelle abgetrennt
 - Bessere Interoperabilität und Integration
+- Systeme werden komponierbar
 - Implizite Dokumentation
 - Formale Validierung möglich
 - Nachhaltig
