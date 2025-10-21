@@ -1,0 +1,50 @@
+// section_id_prefix: apif
+= API First
+
+
+
+
+// == Definition von API First
+
+:hide-title: 1
+include::partial$def-api-first.adoc[]
+:hide-title!:
+
+== Wesentliche Eigenschaften
+
+* Vertrag, der verbindlich ist
+* Zentrale Spezifikation, die geteilt werden kann
+* Kommunikation über Spezifikaiton
+
+
+== Vorteile
+
+- Entkopplung, interna werden von der Schnittstelle abgetrennt
+- Bessere Interoperabilität und Integration
+- Implizite Dokumentation
+- Formale Validierung möglich
+- Nachhaltig
+- Aufwand für Reverse Engineering sinkt
+- Effizienz steigt, da Teams parallel die API implenentieren können
+
+== Nachteile
+
+- Die Implementierung muss sich an Spezifikation halten
+
+== Übliche Missverständnisse
+
+- Design muss nicht von Implementierung entkoppelt werden
+- Das ist nicht agil
+- Das ist zu aufwendig
+
+== Best Practices
+
+- Klarheit über Datenmodel
+- Prototypische Implementierung parallel zur Spezifikation
+- Formale Validierung!
+
+
+
+
+
+

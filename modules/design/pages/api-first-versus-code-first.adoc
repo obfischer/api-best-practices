@@ -3,3 +3,13 @@
 
 
 Das ist nur ein Template. Der Text befindet sich noch in Evernote
+
+
+
+:hide-title: 1
+
+include::partial$def-api-first.adoc[]
+
+:hide-title!:
+
+include::partial$def-api-first.adoc[]
