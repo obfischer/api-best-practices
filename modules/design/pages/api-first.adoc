@@ -3,7 +3,6 @@
 
 
 
-
 // == Definition von API First
 
 :hide-title: 1
@@ -15,6 +14,7 @@ include::partial$def-api-first.adoc[]
 * Vertrag, der verbindlich ist
 * Zentrale Spezifikation, die geteilt werden kann
 * Kommunikation über Spezifikaiton
+* API ist First Class Citizen
 
 
 == Vorteile
@@ -44,6 +44,7 @@ include::partial$def-api-first.adoc[]
 - Formale Validierung!
 
 
+== Fazit
 
 
 
