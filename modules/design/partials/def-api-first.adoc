@@ -2,9 +2,7 @@ ifndef::hide-title[]
 = API First
 endif::[]
 
-Bei dem Konzept *API Frist* wird für eine Schnittstelle eine formale Spezifikation erstellt und zwischen allen beteiligten Parteien abgestimmt und geteilt.
+*API First* ist ein Konzept zur Beschreibung und Veröffentlichung der Operationen eines Systems,
+wofür für die Schnittstellen des Systems eine formale Spezifikation erstellt und zwischen allen beteiligten Parteien abgestimmt und geteilt wird.
 
-Die Spezifikation dient als Grundlage für jede Implementierung der Schnittstelle.
-Handelt es sich um eine formale Spezifikation, kann diese für die Generierung von Quellcode und weiteren Artefakten genutzt werden.
-
-Ziel ist es, eine technologie- und implementierungsunabhängige Beschreibung einer Schnittstelle zu erstellen,  die ohne Abhängigkeiten zu einer bestimmten Implementierung zur Verfügung gestellt werden kann.
+Damit einher geht das Ziel die *Nutzung und Implementation* einer API voneinander *zu entkoppeln*, da API-Clients nur die API Spezifikation kennen müssen, jedoch nicht die technischen Details deren Implementierung auf Seiten des API-Providers.

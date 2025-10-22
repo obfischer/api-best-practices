@@ -1,10 +1,10 @@
 // section_id_prefix: apif
 = API First
 
-Bei dem Konzept von API First steht im Zentrum die Spezifikation der API.
-Im Folgenden werde ich den Grundgedanken erklären, welche Vorteile und Nachteile ein API-First Ansatz bietet, sowie auf übliche Missverständnisse dieses Ansatzes eingehen.
+API-First ist ein Vorgehen im Rahmen der API-Entwicklung, bei dem die Spezifikation einer API im Zentraum steht mit dem Ziel, die Dienste eines Services transparent zu machen und die Nutzung des Services über seine API von dessen technischer Implementierung zu entkoppeln.
 
-// API First ist ein Konzept zur Entkopplung der Beschreibung einer API von deren technischer Implementierung.
+Im Folgenden werde ich den Grundgedanken erklären, welche Vorteile und Nachteile ein API-First Ansatz bietet, sowie auf übliche Missverständnisse dieses Ansatzes eingehen.
+Die hier aufgeführten Punkte können als Argumentationshilfe genutzt werden, wenn in einer Organisation das Vorgehen bei der API-Entwicklung diskutiert wird.
 
 
 == Was bedeutet API First?
@@ -28,14 +28,12 @@ include::partial$def-api-first.adoc[]
 
 // - Entkopplung, interna werden von der Schnittstelle abgetrennt
 // - Bessere Interoperabilität und Integration
-// - Systeme werden komponierbar
 
 === Systeme werden komponierbar
 
 Eine API Spezifikation senkt den Aufwand und die Hürde für die Entwicklung neuer Prozesse, für die mehrere Systeme integriert werden sollen.
 Für eine Integration eines Systems ist lediglich die Kenntnis der API notwendig, die alle  möglichen Operationen des Systems mit den jeweils benötigten Eingabedaten und möglichen Ergebnissen beschreibt.
 Für eine Integration eines Systems ist daher nur die Implementierung eines Clients für die API des jeweiligen Systems notwendig.
-
 
 === Formale Validierung möglich
 
@@ -46,15 +44,17 @@ Deren Existenz erlaubt es, die Frage zu stellen und mittels Toolings zu beantwor
 Auch die darüber hinausgehende Frage "*Entspricht die API unseren eigenen Standards?*" kann so beantwortet und die Einhaltung sichergestellt werden.
 
 
+=== Toolunterstützung
 
-// - Unterstützung durch Parsen und eigene Tools
+Durch den API-First-Ansatz steht für eine API immer eine formale Beschreibung zur Verfügung, die von externen und eigenen Tools verarbeitet werden kann.
+Übliche Anwendungsfälle sind hier die automatische Generierung von Client- und Server-Implementierung, die Konvertierung der Spezifikation in unterschiedliche Ausgabeformate im Rahmen der Verteilung von Dokumentation und die Validierung der Spezifikation selber.
 
 
-== Die Spezifikation ist die Dokumentation
+=== Die Spezifikation ist die Dokumentation
 
 Bei API-First steht die Spezifikation im Vordergrund als zentrales Artefakt, welches die Grundlage für jede Implementierung, egal ob als API-Provider oder API-Client, dient.
 Da die Spezifikation alle Aspekte in Bezug auf Operationen, und damit das Verhalten der API, und die für die Operationen mit der Operation verbundenen Daten beschreibt, ist eine nachträgliche Dokumentation der API nicht notwendig.
-*Eine API-Spezifikation dient auch immer gleichzeitig als deren Dokumentation.*
+*Eine API-Spezifikation fungiert auch immer gleichzeitig als Dokumentation einer API.*
 
 // - Nachhaltig
 // - Aufwand für Reverse Engineering sinkt
@@ -82,5 +82,7 @@ Da die Spezifikation alle Aspekte in Bezug auf Operationen, und damit das Verhal
 == Fazit
 
 
-
+// todo Später verlinken mit der Seite zum Ansatz Code First
+// todo Später verlinken mit der Seite zum Vergleich zwischen Code First und API First
+// todo Später verlinken mit der Seite zur Klassifikation von APIs
 
