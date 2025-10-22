@@ -1,0 +1,46 @@
+// section_id_prefix: qcaa_
+= Qualitätskriterien für eine API
+
+Auf dieser Seite stelle ich einen leichtgewichtigen Satz von Qualitätskriterien für APIs vor.
+Die hier vorgestellten Kriterien sind hilfreich, wenn es um die Beurteilung der Qualität und des Reifegrades einer API geht.
+Zudem kann mithilfe dieser Kriterien eine bessere Qualität und vergleichbare Ergebnisse bei dem Review von APIs sichergestellt werden.
+
+[#qcaa_]
+== Existenz einer API-Beschreibung
+
+[#qcaa_]
+== Existenz einer formalen API-Beschreibung
+
+[#qcaa_]
+== Syntaktische Korrektheit der API-Beschreibung
+
+[#qcaa_]
+== Beschreibung aller Operationen
+
+// [#qcaa_]
+// ==
+
+// [#qcaa_]
+// ==
+
+// [#qcaa_]
+// ==
+
+// [#qcaa_]
+// ==
+
+[#qcaa_visibility]
+== Sichtbarkeit der API ist beschrieben
+
+Aus der API-Spezifikation heraus können folgende Fragen beantwortet werden:
+
+* Für welchen Benutzerkreis ist API gedacht und freigegeben?
+* Welcher Sichtbarkeitsklasse ist die API zuzuordnen?
+
+Siehe hierzu auch xref:classification-of-apis.adoc[]
+
+// - Fehlerverhalten jeder Operation ist beschrieben
+// - Verwendete Datenstrukturen sind beschrieben
+// - Bedeutung der Datenstrutkuren und der einzelnen Felder sind beschrieben
+// - Verwendete Begriffe sind einheitlich im Kontext der Aufgabe und oder der Organisation
+// - Eigentümer der API ist dokumentiert
