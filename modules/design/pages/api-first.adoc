@@ -10,7 +10,9 @@ Im Folgenden werde ich den Grundgedanken erklären, welche Vorteile und Nachteil
 == Was bedeutet API First?
 
 :hide-title: 1
+
 include::partial$def-api-first.adoc[]
+
 :hide-title!:
 
 == Grundgedanken
@@ -27,6 +29,13 @@ include::partial$def-api-first.adoc[]
 // - Entkopplung, interna werden von der Schnittstelle abgetrennt
 // - Bessere Interoperabilität und Integration
 // - Systeme werden komponierbar
+
+=== Systeme werden komponierbar
+
+Eine API Spezifikation senkt den Aufwand und die Hürde für die Entwicklung neuer Prozesse, für die mehrere Systeme integriert werden sollen.
+Für eine Integration eines Systems ist lediglich die Kenntnis der API notwendig, die alle  möglichen Operationen des Systems mit den jeweils benötigten Eingabedaten und möglichen Ergebnissen beschreibt.
+Für eine Integration eines Systems ist daher nur die Implementierung eines Clients für die API des jeweiligen Systems notwendig.
+
 
 === Formale Validierung möglich
 
