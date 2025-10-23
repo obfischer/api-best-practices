@@ -42,7 +42,7 @@ Für die Erreichung dieses Kriteriums muss die API-Spezifikation folgende Aspekt
 // ==
 
 // [#qcaa_]
-// ==
+== Zugesichertes Service Level Agreement und Verfügbarkeit
 
 // [#qcaa_]
 == Eigentümer der API ist ersichtlich
