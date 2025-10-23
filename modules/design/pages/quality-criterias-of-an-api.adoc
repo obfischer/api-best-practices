@@ -49,6 +49,13 @@ Für die Erreichung dieses Kriteriums muss die API-Spezifikation folgende Aspekt
 
 Aus der API-Spezifikation ist ersichtlich, wer der Eigentümer der API ist und an wen sich Betreiber von API-Clients im Falle von Problemen und Anforderungen wenden können.
 
+Im Einzelnen sollte aus der API-Spezifikation heraus ersichtlich sein:
+
+* Wer ist fachlich für die API verantwortlich
+* Wer ist für den technischen Betrieb der API verantwortlich
+* Wo ist die API-Spezifikation kanonisch hinterlegt
+* Wie können die für die API-Verantworlichen erreicht werden
+
 [#qcaa_visibility]
 == Sichtbarkeit der API ist beschrieben
 
