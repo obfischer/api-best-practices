@@ -70,3 +70,4 @@ Siehe hierzu auch xref:classification-of-apis.adoc[]
 // - Verwendete Datenstrukturen sind beschrieben
 // - Bedeutung der Datenstrutkuren und der einzelnen Felder sind beschrieben
 // - Verwendete Begriffe sind einheitlich im Kontext der Aufgabe und oder der Organisation
+// - SLA udn Verfügbarkeit
