@@ -5,11 +5,22 @@ Auf dieser Seite stelle ich einen leichtgewichtigen Satz von Qualitätskriterien
 Die hier vorgestellten Kriterien sind hilfreich, wenn es um die Beurteilung der Qualität und des Reifegrades einer API geht.
 Zudem kann mithilfe dieser Kriterien eine bessere Qualität und vergleichbare Ergebnisse bei dem Review von APIs sichergestellt werden.
 
+== Qualitätskriterien bewusst auswählen
+
+Nicht jedes einzelne der hier aufgeführten Qualitätskriterien ist für jede API notwendig.
+Vielmehr muss für jede API im Einzelfall entschieden werden, welches Qualitätskriterium einen Mehrwert bietet und ob diese im konkreten Falle einen Mehrwert bietet, der den Aufwand für dessen Erreichung gerechtfertigt ist.
+Jedoch sollte diese Entscheidung bewußt getroffen werden und nicht zufällig erfolgen.
+
 [#qcaa_]
 == Existenz einer API-Beschreibung
 
+Für die API existiert eine API-Beschreibung, entweder als rein textuelle Beschreibung oder als formale Spezifikation in einem für die Art der API entwickelten Standard.
+
 [#qcaa_]
 == Existenz einer formalen API-Beschreibung
+
+Es existiert eine formale API-Spezifikation in einem für die API entwickelten Standard und kann mit entsprechendem Tooling verarbeitet werden.
+Dies ist eine relevante Grundlage für jegwede Art der Automatisierung, beginnen von Validierung bis hin zur Code-Generierung.
 
 [#qcaa_]
 == Syntaktische Korrektheit der API-Beschreibung
@@ -17,8 +28,12 @@ Zudem kann mithilfe dieser Kriterien eine bessere Qualität und vergleichbare Er
 [#qcaa_]
 == Beschreibung aller Operationen
 
-// [#qcaa_]
-// ==
+Die API-Spezifikation beschreibt alle möglichen Operationen der API.
+
+Für die Erreichung dieses Kriteriums muss die API-Spezifikation folgende Aspekte abdecken:
+
+* Alle Operationen sind aufgeführt
+* Jede Operation ist hinsichtlich ihres Verhaltens beschrieben
 
 // [#qcaa_]
 // ==
@@ -28,6 +43,11 @@ Zudem kann mithilfe dieser Kriterien eine bessere Qualität und vergleichbare Er
 
 // [#qcaa_]
 // ==
+
+// [#qcaa_]
+== Eigentümer der API ist ersichtlich
+
+Aus der API-Spezifikation ist ersichtlich, wer der Eigentümer der API ist und an wen sich Betreiber von API-Clients im Falle von Problemen und Anforderungen wenden können.
 
 [#qcaa_visibility]
 == Sichtbarkeit der API ist beschrieben
@@ -43,4 +63,3 @@ Siehe hierzu auch xref:classification-of-apis.adoc[]
 // - Verwendete Datenstrukturen sind beschrieben
 // - Bedeutung der Datenstrutkuren und der einzelnen Felder sind beschrieben
 // - Verwendete Begriffe sind einheitlich im Kontext der Aufgabe und oder der Organisation
-// - Eigentümer der API ist dokumentiert
