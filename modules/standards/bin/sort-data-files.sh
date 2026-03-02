@@ -13,6 +13,8 @@ cat modules/standards/data/http-related-standards.yaml \
   | jq '[ .standards.[] ] | sort_by(.title) | {standards: . }' \
   | yq -p=json > ${tempfile}
 
+diff ${tempfile} modules/standards/data/http-related-standards.yaml
+
 cat ${tempfile} > modules/standards/data/http-related-standards.yaml
 
 rm ${tempfile} || true

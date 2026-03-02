@@ -12,6 +12,8 @@ jobs:
         uses: actions/checkout@v6
       - name: Validate Data Files
         run: ./modules/standards/bin/validate-data-files.sh
+      - name: Check sorting of Data Files
+        run: ./modules/standards/bin/sort-data-files.sh
       - name: Install Node.js
         uses: actions/setup-node@v6
         with:
