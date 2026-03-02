@@ -5,6 +5,14 @@ standards:
     url: https://datatracker.ietf.org/doc/html/rfc6585
     topics:
       - HTTP Protocol
+      - HTTP Response Codes
+  - title: An HTTP Status Code to Report Legal Obstacles - RFC 7725
+    year: "2016"
+    status: active
+    url: https://datatracker.ietf.org/doc/html/rfc7725
+    topics:
+      - HTTP Protocol
+      - HTTP Response Codes
   - title: HTTP/2 - RFC 9113
     year: "2022"
     status: active
