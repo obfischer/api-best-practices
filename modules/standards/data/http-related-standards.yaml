@@ -10,6 +10,7 @@ standards:
     year: "2016"
     status: active
     url: https://datatracker.ietf.org/doc/html/rfc7725
+    type: Proposed Standard
     topics:
       - HTTP Protocol
       - HTTP Response Codes
