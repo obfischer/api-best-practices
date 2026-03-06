@@ -1,0 +1,44 @@
+openapi: 3.1.0
+info:
+  title: Hello World API
+  version: 1.0.0
+  description: Eine einfache OpenAPI 3.1-konforme API mit einem `helloWorld`-Endpunkt.
+paths:
+  /helloWorld:
+    get:
+      summary: Gibt eine einfache Begrüßung zurück.
+      operationId: getHelloWorld
+      tags:
+        - Beispiel
+      parameters:
+        - $ref: '#/components/parameters/sunsetHeader'
+        - $ref: '#/components/parameters/relationLinkHeader'
+      responses:
+        '200':
+          description: Erfolgreiche Begrüßung
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+                    example: "Hello, world!"
+components:
+  parameters:
+    relationLinkHeader:
+      name: Link
+      in: header
+      required: false
+      schema:
+        type: string
+      x-link-relation-type: sunset
+      x-link-relation-url: http://amce.net/sunset
+    sunsetHeader:
+      name: Sunset
+      in: header
+      required: false
+      schema:
+        type: string
+        format: date-time
+      description: Ein optionaler Header mit dem Namen "abc"
