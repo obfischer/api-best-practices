@@ -14,7 +14,7 @@ include::partial$legend.adoc[]
 [#ssby_standards]
 == Standards
 
-This page lists all standards referenced by their title.
+This page lists all standards organised by the year of publication.
 
 include::partial$generated-http-related-standards-sorted-by-year.adoc[]
 
