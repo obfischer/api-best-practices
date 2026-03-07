@@ -13,8 +13,18 @@ cat modules/standards/data/http-related-standards.yaml \
   | jq '[ .standards.[] ] | sort_by(.title) | {standards: . }' \
   | yq -p=json > ${tempfile}
 
-diff ${tempfile} modules/standards/data/http-related-standards.yaml
+if diff ${tempfile} modules/standards/data/http-related-standards.yaml; then
+  IS_UNSORTED=0
+else
+  IS_UNSORTED=1
+fi
 
 cat ${tempfile} > modules/standards/data/http-related-standards.yaml
 
 rm ${tempfile} || true
+
+# Soll mit <>0 aussteigen, auch wenn es sortiert wurde, damit
+# die Pipeline fehlschlägt. Es liegt in der Verantwortung
+# des Commiters die richtige Reihenfolge sicherzustellen.
+# Oliver B. Fischer, 2026-03-07
+exit ${IS_UNSORTED}
