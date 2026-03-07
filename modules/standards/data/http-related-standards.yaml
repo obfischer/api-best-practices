@@ -188,6 +188,15 @@ standards:
     url: https://datatracker.ietf.org/doc/html/rfc7578
     topics:
       - Media Types
+  - title: Security Considerations for Optimistic Protocol Transitions in HTTP/1.1
+    url: https://datatracker.ietf.org/doc/html/rfc9931
+    status: active
+    type: Proposed Standard
+    year: "2026"
+    topics:
+      - Security
+    description: |
+      In HTTP/1.1, the client can request a change to a new protocol on the existing  connection. This document discusses the security considerations that apply  to data sent by the client before this request is confirmed and adds new  requirements to RFCs 9112 and 9298 to avoid related security issues.
   - title: The "data" URL scheme - RFC 2397
     year: "1998"
     status: active
