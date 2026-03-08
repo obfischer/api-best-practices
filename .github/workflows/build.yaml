@@ -4,12 +4,19 @@ on:
   workflow_dispatch:
 
 jobs:
+  validate:
+    runs-on: ubuntu-latest
+    name: "Prebuilt validations"
+    container:
+      image: ghcr.io/google/yamlfmt:latest
+      steps:
+        - name: Checkout repository
+          uses: actions/checkout@v6
+        - run: yamlfmt --version
   build:
     runs-on: ubuntu-latest
     name: "Build Antora project"
     steps:
-      - name: A
-        run: yamlfmt  --version
       - name: Checkout repository
         uses: actions/checkout@v6
       - name: Validate Data Files
