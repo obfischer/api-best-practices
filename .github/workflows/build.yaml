@@ -8,6 +8,8 @@ jobs:
     runs-on: ubuntu-latest
     name: "Build Antora project"
     steps:
+      - name: A
+        run: yamlfmt  --version
       - name: Checkout repository
         uses: actions/checkout@v6
       - name: Validate Data Files
