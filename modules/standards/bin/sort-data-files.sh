@@ -9,9 +9,8 @@ source  ${SCRIPT_DIR}/functions.sh
 tempfile=$(mktemp)
 
 cat modules/standards/data/http-related-standards.yaml \
-  | convert_yaml_to_json \
-  | jq '[ .standards.[] ] | sort_by(.title) | {standards: . }' \
-  | yq -p=json > ${tempfile}
+  | yq '.standards |= sort_by(.title) ' \
+  > ${tempfile}
 
 if diff ${tempfile} modules/standards/data/http-related-standards.yaml; then
   IS_UNSORTED=0
