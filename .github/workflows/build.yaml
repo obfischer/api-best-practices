@@ -1,5 +1,6 @@
+---
 name: Build Antora Project
-on:
+'on':
   push:
   workflow_dispatch:
 
@@ -10,6 +11,13 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v6
+      - name: Validate YAML Files
+        run: |
+          find . -name '*.yaml' -type f | \
+            while IFS= read -r file;
+            do
+              yamllint --strict $file;
+          done
       - name: Validate Data Files
         run: ./modules/standards/bin/validate-data-files.sh
       - name: Check sorting of Data Files
