@@ -21,4 +21,4 @@ jobs:
       - name: Install Antora
         run: npm clean-install
       - name: Generate Site
-        run: npx antora antora-playbook.yml
+        run: npx antora --stacktrace antora-playbook.yml
