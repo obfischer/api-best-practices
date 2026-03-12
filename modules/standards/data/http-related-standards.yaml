@@ -1,146 +1,317 @@
 ---
 standards:
   - title: Additional HTTP Status Codes - RFC 6585
+    asciidocfile: rfc-6585-additional-http-status-codes.adoc
     year: "2012"
     status: active
     url: https://datatracker.ietf.org/doc/html/rfc6585
+    description: |
+      This document specifies additional HyperText Transfer Protocol (HTTP)
+      status codes for a variety of common situations.
     type: Proposed Standard
     topics:
       - HTTP Protocol
   - title: An HTTP Status Code to Report Legal Obstacles - RFC 7725
+    asciidocfile: rfc-7725-an-http-status-code-to-report-legal-obstacles.adoc
     year: "2016"
     status: active
     url: https://datatracker.ietf.org/doc/html/rfc7725
+    description: |
+      This document specifies a Hypertext Transfer Protocol (HTTP) status code
+      for use when resource access is denied as a consequence of legal demands.
     type: Proposed Standard
     topics:
       - HTTP Protocol
       - HTTP Response Codes
   - title: 'Communicating Presentation Information in Internet Messages: The Content-Disposition Header Field - RFC 2183'
+    asciidocfile: rfc-2183-communicating-presentation-information-in-internet-messages-the-content-disposition-header-field.adoc
     year: "1997"
     status: active
     url: https://datatracker.ietf.org/doc/html/rfc2183
+    description: |
+      This memo provides a mechanism whereby messages conforming to the MIME
+      specifications [RFC 2045, RFC 2046, RFC 2047, RFC 2048, RFC 2049]  can
+      convey presentational information. It specifies the "Content-Disposition"
+      header field, which is optional and valid for any MIME entity  ("message"
+      or &quot;body part&quot;). Two values for this header field  are described
+      in this memo; one for the ordinary linear presentation of  the body part,
+      and another to facilitate the use of mail to transfer  files. It is
+      expected that more values will be defined in the future,  and procedures
+      are defined for extending this set of values.
+
+      This document is intended as an extension to MIME.  As such, the reader is
+      assumed to be familiar with the MIME specifications, and RFC 822.  The
+      information presented herein supplements but does not replace that found
+      in those documents.
+
+      This document is a revision to the Experimental protocol defined in RFC
+      1806.  As compared to RFC 1806, this document contains minor editorial
+      updates, adds new parameters needed to support the File Transfer Body
+      Part, and references a separate specification for the handling of
+      non-ASCII and/or very long parameter values.
     type: Proposed Standard
     topics:
       - HTTP Header
-  - title: Expect-CT Extension for HTTP
+  - title: Expect-CT Extension for HTTP - RFC 9163
+    asciidocfile: rfc-9163-expect-ct-extension-for-http.adoc
     year: "2022"
     status: active
     url: https://datatracker.ietf.org/doc/html/rfc9163/
+    description: |
+      This document defines a new HTTP header field named "Expect-CT", which
+      allows web host operators  to instruct user agents (UAs) to expect valid
+      Signed Certificate Timestamps (SCTs) to be served  on connections to these
+      hosts. Expect-CT allows web host operators to discover misconfigurations
+      in their Certificate Transparency (CT) deployments. Further, web host
+      operators can use Expect-CT  to ensure that if a UA that supports
+      Expect-CT accepts a misissued certificate, that certificate  will be
+      discoverable in Certificate Transparency logs.
     type: Experimental
     topics:
       - HTTP Header
       - Security
   - title: Forwarded HTTP Extension - RFC 7239
+    asciidocfile: rfc-7239-forwarded-http-extension.adoc
     year: "2014"
     status: active
     url: https://datatracker.ietf.org/doc/html/rfc7239
+    description: |
+      This document defines an HTTP extension header field that allows proxy
+      components to disclose information lost in the proxying process, for
+      example, the originating IP address of a request or IP address of the
+      proxy on the user-agent-facing interface. In a path of proxying
+      components, this makes it possible to arrange it so that each subsequent
+      component will have access to, for example, all IP addresses used in  the
+      chain of proxied HTTP requests.
+
+      This document also specifies guidelines for a proxy administrator to
+      anonymize the origin of a request.
     type: Proposed Standard
     topics:
       - HTTP Protocol
   - title: HTTP Cache-Control Extensions for Stale Content - RFC 5861
+    asciidocfile: rfc-5861-http-cache-control-extensions-for-stale-content.adoc
     year: "2011"
     status: active
     type: Informational
     url: https://datatracker.ietf.org/doc/html/rfc5861
+    description: |
+      This document defines two independent HTTP Cache-Control extensions  that
+      allow control over the use of stale responses by caches.
     topics:
       - Caching
   - title: HTTP Caching - RFC 9111
+    asciidocfile: rfc-9111-http-caching.adoc
     year: "2022"
     status: active
     type: Internet Standard
     url: https://datatracker.ietf.org/doc/html/rfc9111
+    description: |
+      The Hypertext Transfer Protocol (HTTP) is a stateless application-level
+      protocol for distributed, collaborative, hypertext information systems.
+      This document defines HTTP caches and the associated header fields  that
+      control cache behavior or indicate cacheable response messages.
     topics:
       - Caching
   - title: HTTP Header Field X-Frame-Options - RFC 7034
+    asciidocfile: rfc-7034-http-header-field-x-frame-options.adoc
     year: "2013"
     status: active
     type: Informational
     url: https://datatracker.ietf.org/doc/html/rfc7034
+    description: |
+      To improve the protection of web applications against clickjacking,  this
+      document describes the X-Frame-Options HTTP header field, which  declares
+      a policy, communicated from the server to the client browser,  regarding
+      whether the browser may display the transmitted content in  frames that
+      are part of other web pages.
     topics:
       - Security
       - HTTP Header
   - title: HTTP Immutable Responses
+    asciidocfile: rfc-8246-http-immutable-responses.adoc
     year: "2017"
+    description: |
+      The immutable HTTP response Cache-Control extension allows servers to
+      identify resources that will not be updated during their freshness
+      lifetime.  This ensures that a client never needs to revalidate a cached
+      fresh resource to be certain it has not been modified.
     status: active
-    type: HTTP Immutable Responses
+    type: HTTP Immutable Responses - RFC 8246
     url: https://datatracker.ietf.org/doc/html/rfc8246
     topics:
       - HTTP Protocol
   - title: HTTP Origin-Bound Authentication (HOBA) - RFC 7486
+    asciidocfile: rfc-7486-http-origin-bound-authentication-hoba.adoc
     year: "2015"
     status: active
     type: Experimental
     url: https://datatracker.ietf.org/doc/html/rfc7486
+    description: |
+      HTTP Origin-Bound Authentication (HOBA) is a digital-signature-based
+      design for an HTTP authentication method. The design can also be used in
+      JavaScript-based authentication embedded in HTML. HOBA is an alternative
+      to HTTP authentication schemes that require passwords and therefore
+      avoids all problems related to passwords, such as leakage of  server-side
+      password databases.
     topics:
       - Authentication
       - Security
   - title: HTTP Semantics - RFC 9110
+    asciidocfile: rfc-9110-http-semantics.adoc
     year: "2022"
     status: active
     url: https://datatracker.ietf.org/doc/html/rfc9110
+    description: |
+      The Hypertext Transfer Protocol (HTTP) is a stateless application-level
+      protocol for distributed, collaborative, hypertext information systems.
+      This document describes the overall architecture of HTTP, establishes
+      common terminology, and defines aspects of the protocol that are shared
+      by all versions. In this definition are core protocol elements,
+      extensibility mechanisms, and the "http" and "https" Uniform Resource
+      Identifier (URI) schemes.
     type: Internet Standard
     topics:
       - HTTP Protocol
-  - title: HTTP State Management Mechanism
+  - title: HTTP State Management Mechanism - RFC 6265
+    asciidocfile: rfc-6265-http-state-management-mechanism.adoc
     year: "2011"
     status: active
     url: https://datatracker.ietf.org/doc/html/rfc6265
+    description: |
+      This document defines the HTTP Cookie and Set-Cookie header fields.  These
+      header fields can be used by HTTP servers to store state  (called cookies)
+      at HTTP user agents, letting the servers maintain  a stateful session over
+      the mostly stateless HTTP protocol. Although cookies have many historical
+      infelicities that degrade their  security and privacy, the Cookie and
+      Set-Cookie header fields are  widely used on the Internet. This document
+      obsoletes RFC 2965.
     type: Proposed Standard
     topics:
       - Cookies
   - title: HTTP/1.1 - RFC 9112
+    asciidocfile: rfc-9112-http-1.1.adoc
     year: "2022"
     status: active
     url: https://datatracker.ietf.org/doc/html/rfc9112
+    description: |
+      The Hypertext Transfer Protocol (HTTP) is a stateless application-level
+      protocol for distributed, collaborative, hypertext information systems.
+      This document specifies the HTTP/1.1 message syntax, message parsing,
+      connection management, and related security concerns.
     type: Internet Standard
     topics:
       - HTTP Protocol
       - HTTP Response Codes
   - title: HTTP/2 - RFC 9113
+    asciidocfile: rfc-9113-http-2.adoc
     year: "2022"
     status: active
     url: https://datatracker.ietf.org/doc/html/rfc9113
+    description: |
+      This specification describes an optimized expression of the semantics of
+      the Hypertext Transfer Protocol (HTTP), referred to as HTTP version 2
+      (HTTP/2). HTTP/2 enables a more efficient use of network resources and  a
+      reduced latency by introducing field compression and allowing multiple
+      concurrent exchanges on the same connection.
     type: Proposed Standard
     topics:
       - HTTP Protocol
   - title: HTTP/3 - RFC 9114
+    asciidocfile: rfc-9114-http-3.adoc
     year: "2022"
     status: active
     url: https://datatracker.ietf.org/doc/html/rfc9114
+    description: |
+      The QUIC transport protocol has several features that are desirable  in a
+      transport for HTTP, such as stream multiplexing, per-stream flow  control,
+      and low-latency connection establishment. This document  describes a
+      mapping of HTTP semantics over QUIC. This document  also identifies HTTP/2
+      features that are subsumed by QUIC and  describes how HTTP/2 extensions
+      can be ported to HTTP/3.
     type: Proposed Standard
     topics:
       - HTTP Protocol
   - title: Hyper Text Coffee Pot Control Protocol (HTCPCP/1.0) - RFC 2324
+    asciidocfile: rfc-2324-hyper-text-coffee-pot-control-protocol-htcpcp-1.0.adoc
     year: "1998"
     status: active
     type: Informational
-    url: https://datatracker.ietf.org/doc/html/rfc2324
+    url: https://datatracker.ietf.org/doc/html/rfc2324/
+    description: |
+      This document describes HTCPCP, a protocol for controlling, monitoring,
+      and diagnosing coffee pots.
     topics:
       - HTTP Protocol
       - April Joke
       - Coffee
   - title: Hypertext Transfer Protocol -- HTTP/1.0 - RFC 1945
+    asciidocfile: rfc-1945-hypertext-transfer-protocol-http-1.0.adoc
     year: "1996"
     status: obsolete
     type: Informational
     url: https://datatracker.ietf.org/doc/html/rfc1945
+    description: |
+      The Hypertext Transfer Protocol (HTTP) is an application-level protocol
+      with the lightness  and speed necessary for distributed, collaborative,
+      hypermedia information systems. It i s a generic, stateless,
+      object-oriented protocol which can be used for many tasks, such  as name
+      servers and distributed object management systems, through extension of
+      its  request methods (commands). A feature of HTTP is the typing of data
+      representation, allowing  systems to be built independently of the data
+      being transferred. HTTP has been in use by  the World-Wide Web global
+      information initiative since 1990. This specification reflects  common
+      usage of the protocol referred to as "HTTP/1.0".
     topics:
       - HTTP Protocol
   - title: Hypertext Transfer Protocol -- HTTP/1.1 - RFC 2068
+    asciidocfile: rfc-2068-hypertext-transfer-protocol-http-1.1.adoc
     url: https://datatracker.ietf.org/doc/html/rfc2068
+    description: |
+      The Hypertext Transfer Protocol (HTTP) is an application-level protocol
+      for distributed, collaborative, hypermedia information systems. It is a
+      generic, stateless, object-oriented protocol which can be used for many
+      tasks, such as name servers and distributed object management systems,
+      through extension of its request methods. A feature of HTTP is the  typing
+      and negotiation of data representation, allowing systems to be built
+      independently of the data being transferred. HTTP has been  in use by the
+      World-Wide Web global information initiative since 1990.  This
+      specification defines the protocol referred to as "HTTP/1.1".
     type: Proposed Standard
     year: "1997"
     status: obsolete
     topics:
       - HTTP Protocol
   - title: Hypertext Transfer Protocol -- HTTP/1.1 - RFC 2616
+    asciidocfile: rfc-2616-hypertext-transfer-protocol-http-1.1.adoc
     year: "1999"
     status: obsolete
     url: https://datatracker.ietf.org/doc/html/rfc2616
+    description: |
+      The Hypertext Transfer Protocol (HTTP) is an application-level protocol
+      for distributed, collaborative, hypermedia information systems. It is a
+      generic, stateless, protocol which can be used for many tasks beyond  its
+      use for hypertext, such as name servers and distributed object  management
+      systems, through extension of its request methods, error codes and
+      headers. A feature of HTTP is the typing and negotiation  of data
+      representation, allowing systems to be built independently of the data
+      being transferred.
+
+      HTTP has been in use by the World-Wide  Web global information initiative
+      since 1990. This specification  defines the protocol referred to as
+      &quot;HTTP/1.1&quot;, and is  an update to RFC 2068.
     type: Draft Standard
     topics:
       - HTTP Protocol
   - title: JSON Lines
+    description: |
+      The JSON Lines is a text format, also called newline-delimited JSON.  JSON
+      Lines is a convenient format for storing structured data that  may be
+      processed one record at a time. It works well with unix-style  text
+      processing tools and shell pipelines. It's a great format  for log files.
+      It's also a flexible format for passing messages  between cooperating
+      processes.
+    asciidocfile: json-lines.adoc
     status: active
     year: "2020"
     type: Practised standard
@@ -148,72 +319,145 @@ standards:
     topics:
       - Data Interchange Format
   - title: JSON Schema 2020-12
+    asciidocfile: json-schema-2020-12.adoc
+    description: |
+      JSON Schema provides a vocabulary for describing JSON documents by a set
+      of rules to which a JSON document must conform to be considered valid.
     status: active
     year: "2020"
     type: Published Standard
     url: https://json-schema.org/specification
     topics:
       - Schema language
-  - title: JavaScript Object Notation (JSON) Text Sequences
+  - title: JavaScript Object Notation (JSON) Text Sequences - RFC 7464
+    asciidocfile: rfc7464-javascript-object-notation-json-text-sequences.adoc
     year: "2015"
     status: active
     type: Proposed Standard
     url: https://datatracker.ietf.org/doc/html/rfc7464
+    description: |
+      This document describes the JavaScript Object Notation (JSON) text
+      sequence format and associated media type "application/json-seq".  A JSON
+      text sequence consists of any number of JSON texts, all encoded  in UTF-8,
+      each prefixed by an ASCII Record Separator (0x1E),  and each ending with
+      an ASCII Line Feed character (0x0A).
     topics:
       - Data Interchange Format
   - title: 'Linkset: Media Types and a Link Relation Type for Link Sets - RFC 9264'
+    asciidocfile: rfc-9264-linkset-media-types-and-a-link-relation-type-for-link-sets.adoc
     year: "2022"
     status: active
     type: Published Standard
     url: https://datatracker.ietf.org/doc/html/rfc9264
+    description: |
+      This specification defines two formats and associated media types  for
+      representing sets of links as standalone documents. One format is based on
+      JSON, and the other is aligned with the format for representing links in
+      the HTTP "Link" header field. This specification  also introduces a link
+      relation type to support the  discovery of sets of links.
     topics:
       - Linking
   - title: Problem Details for HTTP APIs - RFC 7807
+    asciidocfile: rfc-7807-problem-details-for-http-apis.adoc
     year: "2016"
     status: obsolete
     type: Proposed standard
     url: https://datatracker.ietf.org/doc/html/rfc7807
+    description: |
+      This document defines a "problem detail" as a way to carry
+      machine-readable details of errors in a HTTP response to avoid  the need
+      to define new error response formats for HTTP APIs.
     topics:
       - Error handling
   - title: Problem Details for HTTP APIs - RFC 9457
+    asciidocfile: rfc-9457-problem-details-for-http-apis.adoc
     year: "2023"
     status: active
     type: Proposed standard
     url: https://datatracker.ietf.org/doc/html/rfc9457
+    description: |
+      This document defines a "problem detail" to carry machine-readable
+      details of errors in HTTP response content to avoid the need to define new
+      error response formats for HTTP APIs.
     topics:
       - Error handling
   - title: 'Returning Values from Forms: multipart/form-data - RFC 7578'
+    asciidocfile: rfc-7578-returning-values-from-forms-multipartform-data.adoc
     year: "2015"
     status: active
     type: Proposed Standard
     url: https://datatracker.ietf.org/doc/html/rfc7578
+    description: |
+      This specification defines the multipart/form-data media type,  which can
+      be used by a wide variety of applications and transported by a wide
+      variety of protocols as a way of returning a set of values  as the result
+      of a user filling out a form. This document obsoletes  RFC 2388.
     topics:
       - Media Types
   - title: The "data" URL scheme - RFC 2397
+    asciidocfile: rfc-2397-the-data-url-scheme.adoc
     year: "1998"
     status: active
     url: https://datatracker.ietf.org/doc/html/rfc2397
+    description: |
+      A new URL scheme, "data", is defined. It allows inclusion of  small data
+      items as "immediate" data, as if it had been  included externally.
     type: Proposed Standard
     topics:
       - Identifiers
   - title: The Deprecation HTTP Response Header Field - RFC 8594
+    asciidocfile: rfc-8594-the-deprecation-http-response-header-field.adoc
     year: "2025"
     status: active
     url: https://datatracker.ietf.org/doc/html/rfc9745
+    description: |
+      The Deprecation HTTP response header field is used to signal to consumers
+      of a resource (identified by a URI) that the resource will be or has been
+      deprecated. Additionally, the deprecation link relation can be used to
+      link to a resource that provides further information about planned or
+      existing deprecation. It may also  provide ways in which client
+      application developers can best manage deprecation.
     type: Proposed Standard
     topics:
       - HTTP Header
       - Life Cycle Management
   - title: The Hyper Text Coffee Pot Control Protocol for Tea Efflux Appliances (HTCPCP-TEA) - RFC 7168
+    asciidocfile: rfc-7168-the-hyper-text-coffee-pot-control-protocol-for-tea-efflux-appliances-htcpcp-tea.adoc
     year: "2014"
     status: active
     url: https://datatracker.ietf.org/doc/html/rfc7168
+    description: |
+      The Hyper Text Coffee Pot Control Protocol (HTCPCP) specification does not
+      allow for  the brewing of tea, in all its variety and complexity. This
+      paper outlines an extension  to HTCPCP to allow for pots to provide
+      networked tea-brewing facilities.
     type: Informational
     topics:
       - HTTP Protocol
       - April Joke
       - Coffee
   - title: The JSON data interchange syntax - ECMA-404
+    asciidocfile: ecma-404-the-json-data-interchange-syntax.adoc
+    description: |
+      JSON is a lightweight, text-based, language-independent syntax for
+      defining data interchange formats. It was derived from the ECMAScript
+      programming language, but is programming language independent. JSON
+      defines a small set of structuring rules for the portable  representation
+      of structured data.
+
+      The goal of this specification is only to define the syntax of valid  JSON
+      texts. Its intent is not to provide any semantics or interpretation  of
+      text conforming to that syntax. It also intentionally does not define how
+      a valid JSON text might be internalized into the data structures  of a
+      programming language. There are many possible semantics that  could be
+      applied to the JSON syntax and many ways that a JSON text can be processed
+      or mapped by a programming language.  Meaningful interchange of
+      information using JSON requires agreement  among the involved parties on
+      the specific semantics to be applied.  Defining specific semantic
+      interpretations of JSON is potentially a topic for other specifications.
+      Similarly, language mappings of JSON can also be independently specified.
+      For example, ECMA-262 defines mappings between valid JSON texts and
+      ECMAScript’s runtime  data structures.
     year: "2017"
     status: active
     type: Published Standard
@@ -221,101 +465,225 @@ standards:
     topics:
       - Data Interchange Format
   - title: The JavaScript Object Notation (JSON) Data Interchange Format - RFC 8259
+    asciidocfile: rfc-8259-the-javascript-object-notation-json-data-interchange-format.adoc
     year: "2017"
     status: active
     type: Internet Standard
     url: https://datatracker.ietf.org/doc/html/rfc8259
+    description: |
+      JavaScript Object Notation (JSON) is a lightweight, text-based,
+      language-independent data interchange format. It was derived from the
+      ECMAScript Programming Language Standard. JSON defines a small set  of
+      formatting rules for the portable representation of structured  data.
+
+      This document removes inconsistencies with other specifications  of JSON,
+      repairs specification errors, and offers experience-based
+      interoperability guidance.
     topics:
       - Data Interchange Format
   - title: The Sunset HTTP Header Field - RFC 8594
+    asciidocfile: rfc-8594-the-sunset-http-header-field.adoc
     year: "2019"
     status: active
     url: https://datatracker.ietf.org/doc/html/rfc8594
+    description: |
+      This specification defines the Sunset HTTP response header field, which
+      indicates  that a URI is likely to become unresponsive at a specified
+      point in the future.  It also defines a sunset link relation type that
+      allows linking to resources  providing information about an upcoming
+      resource or service sunset.
     type: Informational
     topics:
       - HTTP Header
       - Life Cycle Management
   - title: The Transport Layer Security (TLS) Protocol Version 1.2 - RFC 5246
+    asciidocfile: rfc-5246-the-transport-layer-security-tls-protocol-version-1.2.adoc
     year: "2008"
     status: Proposed Standard
     url: https://datatracker.ietf.org/doc/html/rfc5246
+    description: |
+      This document specifies Version 1.2 of the Transport Layer Security (TLS)
+      protocol. The TLS protocol provides communications security over the
+      Internet. The protocol allows client/server applications to communicate in
+      a way that is designed to prevent eavesdropping, tampering, or message
+      forgery.
     type: Proposed Standard
     topics:
       - Security
   - title: The Transport Layer Security (TLS) Protocol Version 1.3 - RFC 8446
+    asciidocfile: rfc-8446-the-transport-layer-security-tls-protocol-version-1.3.adoc
     year: "2018"
     status: Proposed Standard
     url: https://datatracker.ietf.org/doc/html/rfc8446
+    description: |
+      This document specifies version 1.3 of the Transport Layer Security (TLS)
+      protocol. TLS allows client/server applications to communicate over the
+      Internet in a way that is designed to prevent eavesdropping, tampering,
+      and message forgery.
+
+      This document updates RFCs 5705 and 6066, and  obsoletes RFCs 5077, 5246,
+      and 6961. This document also specifies  new requirements for TLS 1.2
+      implementations.
     type: Proposed Standard
     topics:
       - Security
   - title: The Web Origin Concept - RFC 6454
+    asciidocfile: rfc-6454-the-web-origin-concept.adoc
     year: "2011"
     status: active
     url: https://datatracker.ietf.org/doc/html/rfc6454
+    description: |
+      This document defines the concept of an "origin", which is often used  as
+      the scope of authority or privilege by user agents. Typically,  user
+      agents isolate content retrieved from different origins to prevent
+      malicious web site operators from interfering with the operation of benign
+      web sites. In addition to outlining the principles that  underlie the
+      concept of origin, this document details how to determine the origin of a
+      URI and how to serialize an origin into a string.  It also defines an HTTP
+      header field, named "Origin,  that indicates which origins are associated
+      with an HTTP request.
     type: Proposed Standard
     topics:
       - Security
   - title: The WebSocket Protocol - RFC 6455
+    asciidocfile: rfc-6455-the-websocket-protocol.adoc
     year: "2011"
     status: active
     url: https://datatracker.ietf.org/doc/html/rfc6455
+    description: |
+      The WebSocket Protocol enables two-way communication between a client
+      running untrusted code in a controlled environment to a remote host  that
+      has opted-in to communications from that code. The security model  used
+      for this is the origin-based security model commonly used by  web
+      browsers. The protocol consists of an opening handshake followed  by basic
+      message framing, layered over TCP. The goal of this technology  is to
+      provide a mechanism for browser-based applications that need  two-way
+      communication with servers that does not rely on opening  multiple HTTP
+      connections (e.g., using XMLHttpRequest or <iframe>s  and long polling).
     type: Proposed Standard
     topics:
       - WebSocket
   - title: Transport Layer Security (TLS) Application-Layer Protocol Negotiation Extension - RFC 7301
+    asciidocfile: rfc-7301-transport-layer-security-tls-application-layer-protocol-negotiation-extension.adoc
     year: "2014"
     status: active
     url: https://datatracker.ietf.org/doc/html/rfc7301
+    description: |
+      This document describes a Transport Layer Security (TLS) extension for
+      application-layer protocol negotiation within the TLS handshake. For
+      instances in which multiple application protocols are supported on the
+      same TCP or UDP port, this extension allows the application layer to
+      negotiate which protocol will be used within the TLS connection.
     type: Proposed Standard
     topics:
       - Security
   - title: 'Uniform Resource Identifier (URI): Generic Syntax - RFC 3986'
+    asciidocfile: rfc-3986-uniform-resource-identifier-uri-generic-syntax.adoc
     year: "2005"
     status: active
     type: Internet Standard
     url: https://datatracker.ietf.org/doc/html/rfc3986
+    description: |
+      A Uniform Resource Identifier (URI) is a compact sequence of characters
+      that identifies an abstract or physical resource. This specification
+      defines the generic URI syntax and a process for resolving URI references
+      that might be in relative form, along with guidelines and security
+      considerations for the use of URIs on the Internet. The URI syntax
+      defines a grammar that is a superset of all valid URIs, allowing an
+      implementation to parse the common components of a URI reference without
+      knowing the scheme-specific requirements of every possible identifier.
+      This specification does not define a generative grammar for URIs; that
+      task is performed by the individual specifications of each URI scheme.
     topics:
       - Identifiers
   - title: Upgrading to TLS Within HTTP/1.1 - RFC 2817
+    asciidocfile: rfc-2817-upgrading-to-tls-within-http-1.1.adoc
     year: "2000"
     status: active
     type: Proposed Standard
     url: https://datatracker.ietf.org/doc/html/rfc2817
+    description: |
+      This memo explains how to use the Upgrade mechanism in HTTP/1.1 to
+      initiate  Transport Layer Security (TLS) over an existing TCP connection.
+      This  allows unsecured and secured HTTP traffic to share the same well
+      known  port (in this case, http: at 80 rather than https: at 443). It also
+      enables "virtual hosting", so a single HTTP + TLS server can disambiguate
+      traffic intended for several hostnames at a single IP address.
+
+      Since HTTP/1.1 defines Upgrade as a hop-by-hop mechanism, this memo also
+      documents the HTTP CONNECT method for establishing end-to-end tunnels
+      across HTTP proxies. Finally, this memo establishes new IANA registries
+      for public HTTP status codes, as well as public or private Upgrade
+      product tokens.
     topics:
       - Security
   - title: Use and Interpretation of HTTP Version Numbers - RFC 2145
+    asciidocfile: rfc-2145-use-and-interpretation-of-http-version-numbers.adoc
     year: "1997"
     status: active
     type: Informational
     url: https://datatracker.ietf.org/doc/html/rfc2145
+    description: |
+      HTTP request and response messages include an HTTP protocol version
+      number.  Some confusion exists concerning the proper use and
+      interpretation of HTTP version numbers, and concerning interoperability of
+      HTTP implementations  of different protocol versions. This document is an
+      attempt to clarify  the situation. It is not a modification of the
+      intended meaning of the  existing HTTP/1.0 and HTTP/1.1 documents, but it
+      does describe the  intention of the authors of those documents, and can be
+      considered  definitive when there is any ambiguity in those documents
+      concerning  HTTP version numbers, for all versions of HTTP.
     topics:
       - Versioning
       - HTTP Protocol
   - title: Use of the Content-Disposition Header Field in the Hypertext Transfer Protocol (HTTP) - RFC 6266
+    asciidocfile: rfc-6266-use-of-the-content-disposition-header-field-in-the-hypertext-transfer-protocol-http.adoc
     year: "2011"
     status: active
     type: Proposed Standard
     url: https://datatracker.ietf.org/doc/html/rfc6266
+    description: |
+      RFC 2616 defines the Content-Disposition response header field, but points
+      out that it is not part of the HTTP/1.1 Standard. This specification
+      takes over the definition and registration of Content- Disposition, as
+      used in HTTP, and clarifies internationalization aspects.
     topics:
       - HTTP Header
   - title: Web Linking - RFC 5988
+    asciidocfile: rfc-5988-web-linking.adoc
     year: "2010"
     status: obsolete
     url: https://datatracker.ietf.org/doc/html/rfc5988
+    description: |
+      This document specifies relation types for Web links, and defines a
+      registry for them. It also defines the use of such links in HTTP headers
+      with the Link header field.
     type: Proposed Standard
     topics:
       - HTTP Header
       - Linking
   - title: Web Linking - RFC 8288
+    asciidocfile: rfc-8288-web-linking.adoc
     year: "2017"
     status: active
     type: Proposed Standard
     url: https://datatracker.ietf.org/doc/html/rfc8288
+    description: |
+      This specification defines a model for the relationships between resources
+      on the Web ("links") and the type of those relationships  ("link relation
+      types").
+
+      It also defines the serialisation  of such links in HTTP headers with the
+      Link header field.
     topics:
       - HTTP Header
       - Linking
   - title: XML Schema 1.1
+    asciidocfile: xml-schema-1.1.adoc
+    description: |
+      XML Schemas express shared vocabularies and allow machines to carry out
+      rules made by people. They provide a means for defining the structure,
+      content and semantics of XML documents.
     status: active
     year: "2012"
     type: W3C Recommendation
@@ -323,6 +691,25 @@ standards:
     topics:
       - Schema language
   - title: YAML Ain’t Markup Language (YAML™) version 1.2.2
+    asciidocfile: yaml-aint-markup-language-yaml-version-1.2.2.adoc
+    description: |
+      This is the YAML specification v1.2.2. It defines the YAML 1.2 data
+      language. There are no normative changes from the YAML specification
+      v1.2. The primary objectives of this revision are to correct errors  and
+      add clarity.
+
+      This revision also strives to make the YAML language development process
+      more open, more transparent and easier for people to contribute to. The
+      input format is now Markdown instead of DocBook, and the images are  made
+      from plain text LaTeX files rather than proprietary drawing  software. All
+      the source content for the specification is publicly  hosted.
+
+      The previous YAML specification3 was published 12 years ago. In that  time
+      span, YAML’s popularity has grown significantly. Efforts are  ongoing to
+      improve the language and grow it to meet the needs  and expectations of
+      its users. While this revision of the specification  makes no actual
+      changes to YAML, it begins a process by which the  language intends to
+      evolve and stay modern.
     year: "2021"
     status: active
     type: Published Standard

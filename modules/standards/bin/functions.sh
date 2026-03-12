@@ -11,8 +11,20 @@ function convert_json_to_yaml() {
 }
 
 function generate_list_of_links() {
-   #jq -r '.[] | "* " + .url + "[" + .title + "^]" + .status  + " " + (.status |= {A: 1, B: 9}[.]) '
-   jq -r '.[] | .status |= {"draft": "{draft}", "obsolete": "{obsolete}"}[.]  | "* " + .url + "[" + .title + "^] " + .status'
+  (( $# == 1 )) || { echo "${FUNCNAME[0]}: expected 1 argument" >&2; return 1; }
+
+  # shellcheck disable=SC2001
+  suffix=$(echo "${1}" | sed 's/[[:space:]]/_/g')
+
+   jq \
+    --arg suffix "${suffix}" \
+    -r \
+   '
+    .[]
+    | .status
+    |= ( {"draft": "{draft}", "obsolete": "{obsolete}"}[.] // "{active}" )
+    | "* [[" + .asciidocfile + "_" + $suffix + "]] xref:" + .asciidocfile + "[" + .title + "] " + .status
+   '
 }
 
 function sort_by_field() {

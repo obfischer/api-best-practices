@@ -1,4 +1,11 @@
+[cols="1,4"]
 |===
-| {draft} | Document or standard is a draft
-| {obsolete} | Document or standard is obsolete and only referenced for completeness
+| {draft}
+| Document or standard is a draft
+
+| {active}
+| Document or standard is relevant
+
+| {obsolete}
+| Document or standard is obsolete and only referenced for completeness
 |===
