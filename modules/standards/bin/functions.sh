@@ -23,7 +23,7 @@ function generate_list_of_links() {
     .[]
     | .status
     |= ( {"draft": "{draft}", "obsolete": "{obsolete}"}[.] // "{active}" )
-    | "* [[" + .asciidocfile + "_" + $suffix + "]] xref:" + .asciidocfile + "[" + .title + "] " + .status
+    | "* [[" + .asciidocfile + "_" + $suffix + "]] xref:" + .asciidocfile + "[" + .title + "]{nbsp}" + .status
    '
 }
 
