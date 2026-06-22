@@ -10,7 +10,7 @@ jobs:
     name: "Build Antora project"
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
       - name: Validate YAML Files
         run: |
           find . -name '*.yaml' -type f | \
