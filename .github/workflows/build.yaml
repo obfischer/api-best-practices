@@ -23,7 +23,7 @@ jobs:
       - name: Check sorting of Data Files
         run: ./modules/standards/bin/sort-data-files.sh
       - name: Install Node.js
-        uses: actions/setup-node@v6
+        uses: actions/setup-node@v7
         with:
           node-version: '18'
       - name: Install Antora
