@@ -5,6 +5,17 @@ name: Build Antora Project
   workflow_dispatch:
 
 jobs:
+  validate:
+    runs-on: ubuntu-latest
+    name: "Prebuilt validations"
+    container:
+      image: ghcr.io/google/yamlfmt:latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+      - name: Check sorting of Data Files
+        run: ./modules/standards/bin/sort-data-files.sh
+
   build:
     runs-on: ubuntu-latest
     name: "Build Antora project"
@@ -20,8 +31,6 @@ jobs:
           done
       - name: Validate Data Files
         run: ./modules/standards/bin/validate-data-files.sh
-      - name: Check sorting of Data Files
-        run: ./modules/standards/bin/sort-data-files.sh
       - name: Install Node.js
         uses: actions/setup-node@v6
         with:
